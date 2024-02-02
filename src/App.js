@@ -1,21 +1,17 @@
-import { Routes, Route } from 'react-router-dom';
+import { useRoutes } from 'react-router-dom';
 import Header from './components/Header';
-import Courses from './components/Courses';
-import MainCourse from './components/MainCourse';
-import About from './components/About/About';
+import routes from './Routes';
 import './App.css';
 
 
 function App() {
+  let router = useRoutes(routes)
+
+
   return (
     <>
       <Header />
-      <Routes>
-        <Route path='/courses' element={<Courses />} />
-        <Route path='/courses/:courseID' element={<MainCourse />} />
-        
-        <Route path='/about/*' element={<About />} />
-      </Routes>
+      {router}
     </>
   );
 }

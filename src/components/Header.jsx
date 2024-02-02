@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -9,15 +9,26 @@ const Header = () => {
         <Container>
           <Navbar.Brand href="#home">SPA</Navbar.Brand>
           <Nav className="me-auto">
-            <Link to="/" style={{ marginLeft: 35, color: "#fff" }}>
+            <NavLink to="/" style={{ marginLeft: 35, color: "#fff" }}>
               Home
-            </Link>
-            <Link to="/courses" style={{ marginLeft: 35, color: "#fff" }}>
+            </NavLink>
+            <NavLink to="/courses" style={{ marginLeft: 35, color: "#fff" }}>
               Courses
-            </Link>
-            <Link to="/about" style={{ marginLeft: 35, color: "#fff" }}>
+            </NavLink>
+            <NavLink to="/about" style={{ marginLeft: 35, color: "#fff" }}>
               About
-            </Link>
+            </NavLink>
+            <NavLink to="/login" style={{ marginLeft: 35, color: "#fff" }}
+            className={(link)=>console.log(link)}
+            >
+              Login
+            </NavLink>
+            <NavLink to="/signup" style={{ marginLeft: 35, color: "#fff" }}>
+              Signup
+            </NavLink>
+            <NavLink to="/dashboard" style={{ marginLeft: 35, color: "#fff" }}>
+              Dashboard
+            </NavLink>
           </Nav>
         </Container>
       </Navbar>

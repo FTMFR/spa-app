@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, Outlet } from "react-router-dom";
 
 const About = () => {
   return (
@@ -12,16 +12,7 @@ const About = () => {
         Dashboard
       </Link>
       <hr />
-      <Routes>
-        <Route
-          path="setting"
-          element={<p style={{ textAlign: "center" }}>Setting</p>}
-        />
-        <Route
-          path="dashboard"
-          element={<p style={{ textAlign: "center" }}>Dashboard</p>}
-        />
-      </Routes>
+      <Outlet />
     </div>
   );
 };
