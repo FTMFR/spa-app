@@ -1,7 +1,28 @@
 const coursesData = [
-    {id:1, title: '20 libs for js devs', price: 220},
-    {id:2, title: 'react course', price: 52},
-    {id:3, title: 'npm for js devs', price: 80}
+  {
+    id: 1,
+    title: "20 libs for js devs",
+    price: 220,
+    img: "/images/20libs.png",
+    description:
+      `امروزه کتابخانه‌ها کد نویسی را خیلی آسان و لذت بخش تر کرده اند. به قدری که حتی امروزه هیچ شرکت برنامه نویسی پروژه های خود را با Vanilla Js پیاده سازی نمی کند`,
+  },
+  {
+    id: 2,
+    title: "react course",
+    price: 52,
+    img: "/images/react.png",
+    description:
+      `قبل از آموزش ری اکت ReactJS ابتدای کار به شما بگیم که تکنولوژی ری اکت برگ برنده برنامه نویسان در دنیای امروز هست اصلا اغراق نکردیم. یه غول به تمام معنا و دنیایی بی انتها از پروژه هایی که میشه با اون نوشت، اون هم خیلی سریع و راحت! تکنولوژی که دنیای وب رو دگرگون کرد و دستپخت شرکت فیسبوک هست که اینستاگرام رو هم با اون طراحی کرده!`,
+  },
+  {
+    id: 3,
+    title: "npm for js devs",
+    price: 80,
+    img: "/images/npm.png",
+    description:
+      `تا حالا به این فکر کردید چرا توسعه تکنولوژی در سال های اخیر انقدر سریع بوده؟ یکی از دلایل اون موضوع آموزش همین دوره هست. یعنی NPM`,
+  },
 ];
 
-export default coursesData
+export default coursesData;
